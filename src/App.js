@@ -21,6 +21,7 @@ function App() {
       setIsLoading(true)
       try {
         const data = await fetch("https://phones-dev.herokuapp.com/api/phones");
+        // const data = await fetch("https://idbdev.com/motion2/public/api/product-is-here-caught-me");
         // const url = 'data.json'
         // const data = await fetch(data);
         const products = await data.json();
@@ -76,6 +77,7 @@ function App() {
         setFilters={setFilters}
       />
      </div>
+
       <div className="flex flex-wrap my-4 container mx-auto">
       
         {/* {products.map((product) => ( */}
